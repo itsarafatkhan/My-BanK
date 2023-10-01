@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Balance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+        <!--Header Area Starts-->
+   <header>
+    <h1 class="text-center text-5xl font-medium mt-4">My <span class="text-red-600 font-bold">BanK</span>!!!</h1>
+   </header>
+        <!--Header Area End-->
+
+        <!--Card Area Starts-->
+   <main class="w-3/4 mx-auto mt-5">
+        <section class="flex gap-4 justify-center flex-wrap">
+            
+            <div class="bg-[red] w-80 h-40 rounded p-5">
+                <h1 class="text-3xl font-normal">Total Balance</h1>
+                <p class="text-5xl font-semibold ">$<span id="total-balance" >00</span></p>
+            </div>
+        
+            <div class="bg-[green] w-80 h-40 rounded p-5">
+                <h1 class="text-3xl font-normal">Total Deposit</h1>
+                <p class="text-5xl font-semibold ">$<span id="deposit-balance" >00</span></p>
+            </div>
+
+            <div class="bg-[blue] w-80 h-40 rounded p-5">
+                <h1 class="text-3xl font-normal">Total Withdraw</h1>
+                <p class="text-5xl font-semibold ">$<span id="withdraw-balance" >00</span></p>
+            </div>
+        </section>
+    <section class="flex gap-4 justify-center flex-wrap">
+        <div id="down" class=" mt-6 p-7 bg-[orange] h-60 rounded">
+            <h1 class="text-3xl font-medium">Deposit Box</h1>
+            <input id="deposit-input" class="block w-11/12 rounded h-10 my-4" type="number" placeholder="Enter Your Amount">
+            <button id="deposit-btn" class="bg-[green] px-4 py-2 rounded text-2xl">Deposit</button>
+        </div>
+        <div id="down" class="mt-6 p-7 h-60 rounded bg-[orange]">
+            <h1 class="text-3xl font-medium">Withdraw Box</h1>
+            <input id="withdraw-input" class="block w-11/12 rounded h-10 my-4" type="number" placeholder="Enter Your Amount">
+            <button id="withdraw-btn" class="bg-[red] px-4 py-2 rounded text-2xl">Withdraw</button>
+        </div>
+        
+    </section>
+   </main>
+        <!--Card Area End-->
+
+    <script src=script.js></script>
+</body>
+</html>

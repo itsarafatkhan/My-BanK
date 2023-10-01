@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#down{
+    width: 30.5rem;
+}
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
